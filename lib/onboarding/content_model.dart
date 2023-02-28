@@ -16,17 +16,17 @@ List<UnboardingContent> contents = [
       image: "asset/one.png",
       discription: "We provide\n"
        "professional services\n"
-        "to you at affordable prices"),
+        "to you at affordable prices."),
   UnboardingContent(
       title: "Hiring Service",
-      image: "asset/one.png",
+      image: "asset/guy.png",
       discription: "Get amazing\n"
        "quality of serices from\n"
-        "experienced individuals"),
+        "experienced individuals."),
   UnboardingContent(
       title: "Hiring Service",
-      image: "asset/one.png",
+      image: "asset/wow.png",
       discription: "Our top priority\n"
        "is your satisfaction\n"
-        "and the best results")
+        "and the best results.")
 ];
