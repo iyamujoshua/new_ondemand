@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ondemand/onboarding/onboarding_one.dart';
+import 'package:ondemand/screens/onboarding/onboarding_one.dart';
 
 class UnboardingContent {
   String image;
@@ -13,20 +13,20 @@ class UnboardingContent {
 List<UnboardingContent> contents = [
   UnboardingContent(
       title: "Hiring Service",
-      image: "asset/one.png",
+      image: "asset/Group33438.png",
       discription: "We provide\n"
-       "professional services\n"
-        "to you at affordable prices."),
+          "professional services\n"
+          "to you at affordable prices."),
   UnboardingContent(
       title: "Hiring Service",
-      image: "asset/guy.png",
+      image: "asset/Group 334411.png",
       discription: "Get amazing\n"
-       "quality of serices from\n"
-        "experienced individuals."),
+          "quality of serices from\n"
+          "experienced individuals."),
   UnboardingContent(
       title: "Hiring Service",
-      image: "asset/wow.png",
+      image: "asset/Group33442.png",
       discription: "Our top priority\n"
-       "is your satisfaction\n"
-        "and the best results.")
+          "is your satisfaction\n"
+          "and the best results.")
 ];

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ondemand/screens/auth/forgetPassword.dart';
+import 'package:ondemand/screens/auth/login.dart';
+import 'package:ondemand/screens/auth/signup.dart';
 import 'package:ondemand/splashscreen.dart';
 
 void main() {
@@ -11,12 +14,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: splashscreen(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: splashscreen(),
+        routes: {
+          '/signup': (context) => const signup(),
+          '/Login': (context) => const Login(),
+          '/ForgetPassword': (context) => const ForgetPassword(),
+          // ForgetPassword
+        });
   }
 }
