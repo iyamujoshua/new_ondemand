@@ -4,6 +4,7 @@ import 'package:ondemand/splashscreen.dart';
 import '../../utilities/Customebutton.dart';
 import '../../utilities/Textformfield.dart';
 import 'get_started.dart';
+import 'package:ondemand/screens/homescreen.dart';
 
 class signup extends StatefulWidget {
   const signup({Key? key}) : super(key: key);
@@ -62,6 +63,7 @@ class _signupState extends State<signup> {
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 30,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
@@ -229,7 +231,10 @@ class _signupState extends State<signup> {
                   size: 17,
                   title: 'Continue',
                   onPress: () {
-                    // Navigator.pushNamed(context, '/DashBoard');
+                    // Navigator.pushNamed(context, '/Homescreen');
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) { 
+        return homescreen();
+       },),);
                   }),
             ],
           ),

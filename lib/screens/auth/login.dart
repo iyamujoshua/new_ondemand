@@ -60,6 +60,7 @@ class _LoginState extends State<Login> {
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 30,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
@@ -182,14 +183,16 @@ class _LoginState extends State<Login> {
                       )),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                child: CustomeRaisedButton(
-                    size: 17,
-                    title: 'Log in',
-                    onPress: () {
-                      // Navigator.pushNamed(context, '/DashBoard');
-                    }),
+              SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: CustomeRaisedButton(
+                      size: 17,
+                      title: 'Log in',
+                      onPress: () {
+                        // Navigator.pushNamed(context, '/DashBoard');
+                      }),
+                ),
               ),
             ],
           ),

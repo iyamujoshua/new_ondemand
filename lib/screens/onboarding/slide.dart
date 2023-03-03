@@ -66,7 +66,7 @@ class _OnbordingState extends State<Onbording> {
                         contents[i].image,
                         height: 400,
                       ),
-                      SizedBox(height: 25),
+                      SizedBox(height: 20),
                       Text(
                         contents[i].title,
                         style: TextStyle(
@@ -104,7 +104,7 @@ class _OnbordingState extends State<Onbording> {
             ),
           ),
           SizedBox(
-            height: 70,
+            height: 20,
           ),
           InkWell(
             onTap: () {
