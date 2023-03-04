@@ -8,7 +8,7 @@ class CardCarousel extends StatelessWidget {
       height: 200,
       child: PageView(
         children: [
-          _buildCard("Image 1", "Description 1", "asset/banner.png"),
+          _buildCard("", "", "asset/banner.png"),
           _buildCard("", " ", "asset/banner.png"),
           _buildCard("", "", "asset/banner.png"),
         ],
