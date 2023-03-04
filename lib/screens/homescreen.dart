@@ -99,13 +99,12 @@ class _homescreenState extends State<homescreen> {
     ),
   ),
 ),
-
-
-
-
-        SizedBox(
+ SizedBox(
           height: 20,
         ),
+
+
+        CardCarousel(),
       ],
     ),
   ),
