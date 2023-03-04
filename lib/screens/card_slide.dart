@@ -9,8 +9,8 @@ class CardCarousel extends StatelessWidget {
       child: PageView(
         children: [
           _buildCard("Image 1", "Description 1", "asset/banner.png"),
-          _buildCard("Image 2", "Description 2", "asset/banner.png"),
-          _buildCard("Image 3", "Description 3", "asset/banner.png"),
+          _buildCard("", " ", "asset/banner.png"),
+          _buildCard("", "", "asset/banner.png"),
         ],
       ),
     );
@@ -33,9 +33,9 @@ class CardCarousel extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title),
-                SizedBox(height: 4),
-                Text(subtitle),
+                // Text(title),
+                // SizedBox(height: 4),
+                // Text(subtitle),
               ],
             ),
           ),
