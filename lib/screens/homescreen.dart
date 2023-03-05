@@ -187,7 +187,7 @@ bottomNavigationBar: BottomNavigationBar(
             icon: Image.asset(
               'asset/Vector.png',
               height: 24,
-              color: _selectedIndex == 2 ? Colors.purple : Colors.grey,
+              color: _selectedIndex == 3 ? Colors.purple : Colors.grey,
             ),
             label: 'Profile',
           ),
