@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:ondemand/main.dart';
 import 'package:ondemand/screens/auth/signup.dart';
+import 'package:ondemand/screens/bottom_navigation.dart';
 import 'package:ondemand/screens/card_slide.dart';
+import 'package:ondemand/screens/services.dart';
 class homescreen extends StatefulWidget {
   const homescreen({Key? key}) : super(key: key);
 
@@ -9,6 +13,13 @@ class homescreen extends StatefulWidget {
 }
 
 class _homescreenState extends State<homescreen> {
+   int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,6 +138,14 @@ Row(
                   ],
                 ),
 
+                SizedBox(height: 10,),
+
+                
+
+
+                
+
+
 
 
 
@@ -138,6 +157,47 @@ Row(
       ),
     ),
   ),
+bottomNavigationBar: BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'asset/house.png',
+              height: 24,
+              color: _selectedIndex == 0 ? Colors.purple : Colors.grey,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'asset/line.png',
+              height: 24,
+              color: _selectedIndex == 1 ? Colors.purple : Colors.grey,
+            ),
+            label: 'Booking',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'asset/chat.png',
+              height: 24,
+              color: _selectedIndex == 2 ? Colors.purple : Colors.grey,
+            ),
+            label: 'Chat',
+          ),
+           BottomNavigationBarItem(
+            icon: Image.asset(
+              'asset/Vector.png',
+              height: 24,
+              color: _selectedIndex == 2 ? Colors.purple : Colors.grey,
+            ),
+            label: 'Profile',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.purple,
+        onTap: _onItemTapped,
+      ),
+
+
 );
 
   }
