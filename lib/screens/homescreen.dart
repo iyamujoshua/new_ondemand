@@ -133,7 +133,7 @@ Row(
                       }),
                       child: Padding(
                         padding: const EdgeInsets.only(right: 20),
-                        child: Text("view all", ),
+                        child: Text("view all",style: TextStyle(color: Colors.purple), ),
                       )),
                   ],
                 ),
@@ -141,6 +141,36 @@ Row(
                 SizedBox(height: 10,),
 
                 
+                
+                Container(
+  child: Padding(
+    padding: const EdgeInsets.only(left: 20, right: 20),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Column(
+          children: [
+            Image.asset("asset/head.png"),
+            Text('Home/Office\nCleaning'),
+          ],
+        ),
+        Column(
+          children: [
+            Image.asset("asset/blue.png"),
+            Text('Dry\nCleaning'),
+          ],
+        ),
+        Column(
+          children: [
+            Image.asset("asset/pics.png"),
+            Text('Electrical\nService'),
+          ],
+        ),
+      ],
+    ),
+  ),
+),
+
 
 
                 
