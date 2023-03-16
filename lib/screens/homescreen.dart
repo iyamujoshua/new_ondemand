@@ -96,7 +96,7 @@ class _homescreenState extends State<homescreen> {
                 child: GestureDetector(
                   onTap: () {
                     // Handle the search bar click event
-                    print("Search bar clicked");
+                    print("Search bar");
                   },
                   child: Row(
                     children: [
