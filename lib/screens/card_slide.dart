@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ondemand/screens/homescreen.dart';
+import 'package:ondemand/screens/homepage/homescreen.dart';
 
 class CardCarousel extends StatelessWidget {
   @override

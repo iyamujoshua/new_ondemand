@@ -1,49 +1,79 @@
 import 'package:flutter/material.dart';
-import 'package:ondemand/screens/homescreen.dart';
+import 'package:ondemand/screens/homepage/homescreen.dart';
 
-class myhomescreen extends StatefulWidget {
-  const myhomescreen({super.key});
+import 'booking.dart';
+
+class ButtomNavigation extends StatefulWidget {
+  const ButtomNavigation({super.key});
 
   @override
-  State<myhomescreen> createState() => _myhomescreenState();
+  State<ButtomNavigation> createState() => _ButtomNavigationState();
 }
 
-class _myhomescreenState extends State<myhomescreen> {
-  int selectedIndex=0;
-  static final List<Widget>_widgetoption =<Widget>[
-    homescreen(),
-    const Text("Search"),
-    const Text("ticket"),
-    const Text("profile"),
+class _ButtomNavigationState extends State<ButtomNavigation> {
+  int selectedIndex = 0;
 
-  ];
-  void _onitemtapped(int index){
-   setState(() {
-      selectedIndex=index; 
-   });
+  final screen = [homescreen(), Booking(), Booking(), Booking()];
+
+  void _onitemtapped(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
     // print('${selectedIndex}');
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text("My data"),
-      // ),
-      body: Center(child: _widgetoption[selectedIndex],),
+      body: screen[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
-        onTap: _onitemtapped,
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         selectedItemColor: Colors.orange,
         unselectedItemColor: Colors.grey,
-        items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label:"home"),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: "search"),
-        BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket), label: "ticket"),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: "profile"),
-      ]),
+        onTap: ((index) {
+          setState(() {
+            selectedIndex = index;
+          });
+          print(selectedIndex);
+        }),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'asset/house.png',
+              height: 24,
+              color: selectedIndex == 0 ? Colors.purple : Colors.grey,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'asset/line.png',
+              height: 24,
+              color: selectedIndex == 1 ? Colors.purple : Colors.grey,
+            ),
+            label: 'Booking',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'asset/chat.png',
+              height: 24,
+              color: selectedIndex == 2 ? Colors.purple : Colors.grey,
+            ),
+            label: 'Chat',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'asset/Vector.png',
+              height: 24,
+              color: selectedIndex == 3 ? Colors.purple : Colors.grey,
+            ),
+            label: 'Profile',
+          ),
+        ],
+      ),
     );
   }
 }
