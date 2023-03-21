@@ -97,7 +97,9 @@ class _HompageDeatailState extends State<HompageDeatail> {
                   ),
                   Column(
                     children: [
-                      Image.asset("asset/pics.png"),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset("asset/pics.png")),
                       Text('Electrical\nService'),
                     ],
                   ),
@@ -116,19 +118,25 @@ class _HompageDeatailState extends State<HompageDeatail> {
                 children: [
                   Column(
                     children: [
-                      Image.asset("asset/head.png"),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset("asset/head.png")),
                       Text('Home/Office\nCleaning'),
                     ],
                   ),
                   Column(
                     children: [
-                      Image.asset("asset/blue.png"),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset("asset/blue.png")),
                       Text('Dry\nCleaning'),
                     ],
                   ),
                   Column(
                     children: [
-                      Image.asset("asset/pics.png"),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset("asset/pics.png")),
                       Text('Electrical\nService'),
                     ],
                   ),
@@ -148,19 +156,25 @@ class _HompageDeatailState extends State<HompageDeatail> {
                 children: [
                   Column(
                     children: [
-                      Image.asset("asset/head.png"),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset("asset/head.png")),
                       Text('Home/Office\nCleaning'),
                     ],
                   ),
                   Column(
                     children: [
-                      Image.asset("asset/blue.png"),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset("asset/blue.png")),
                       Text('Dry\nCleaning'),
                     ],
                   ),
                   Column(
                     children: [
-                      Image.asset("asset/pics.png"),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset("asset/pics.png")),
                       Text('Electrical\nService'),
                     ],
                   ),
