@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ondemand/screens/homepage/homescreen.dart';
 import 'package:ondemand/screens/homepage/view.dart';
 
-import 'booking.dart';
+import '../booking.dart';
 
 class ButtomNavigation extends StatefulWidget {
   const ButtomNavigation({super.key});

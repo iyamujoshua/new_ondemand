@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:ondemand/screens/homepage/homescreen.dart';
-import 'package:ondemand/screens/homepage/view.dart';
+import 'package:ondemand/screens/homepage/view_all.dart';
 
-import 'booking.dart';
+import '../booking.dart';
+import '../bottom_navigation.dart';
 
-class ButtomNavigation extends StatefulWidget {
-  const ButtomNavigation({super.key});
+class view extends StatefulWidget {
+  const view({Key? key}) : super(key: key);
 
   @override
-  State<ButtomNavigation> createState() => _ButtomNavigationState();
+  State<view> createState() => _viewState();
 }
 
-class _ButtomNavigationState extends State<ButtomNavigation> {
+class _viewState extends State<view> {
   int selectedIndex = 0;
 
-  final screen = [homescreen(), Booking(), Booking(), Booking(), ];
+  final screen = [
+    Viewall(),
+    Booking(),
+    Booking(),
+    Booking(),
+  ];
 
   void _onitemtapped(int index) {
     setState(() {

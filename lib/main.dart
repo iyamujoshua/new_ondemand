@@ -3,6 +3,8 @@ import 'package:ondemand/screens/auth/forgetPassword.dart';
 import 'package:ondemand/screens/auth/login.dart';
 import 'package:ondemand/screens/auth/signup.dart';
 import 'package:ondemand/screens/bottom_navigation.dart';
+import 'package:ondemand/screens/homepage/view.dart';
+import 'package:ondemand/screens/homepage/view_all.dart';
 import 'package:ondemand/splashscreen.dart';
 
 void main() {
@@ -27,6 +29,7 @@ class MyApp extends StatelessWidget {
           '/ForgetPassword': (context) => const ForgetPassword(),
           
           '/ButtomNavigation': (context) => const ButtomNavigation(),
+          '/view': (context) => const view(),
           // ButtomNavigation
           // ForgetPassword
         });

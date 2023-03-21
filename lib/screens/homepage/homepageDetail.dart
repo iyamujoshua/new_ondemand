@@ -24,7 +24,6 @@ class _HompageDeatailState extends State<HompageDeatail> {
             padding: EdgeInsets.all(12),
             child: GestureDetector(
               onTap: () {
-                // Handle the search bar click event
                 print("Search bar");
               },
               child: Row(
@@ -59,7 +58,8 @@ class _HompageDeatailState extends State<HompageDeatail> {
               ),
               InkWell(
                   onTap: (() {
-                    print("you tapped me");
+                    Navigator.pushNamed(context, "/view");
+                    // print("you tapped me");
                   }),
                   child: Padding(
                     padding: const EdgeInsets.only(right: 20),
@@ -98,8 +98,8 @@ class _HompageDeatailState extends State<HompageDeatail> {
                   Column(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset("asset/pics.png")),
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset("asset/pics.png")),
                       Text('Electrical\nService'),
                     ],
                   ),
@@ -119,24 +119,24 @@ class _HompageDeatailState extends State<HompageDeatail> {
                   Column(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset("asset/head.png")),
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset("asset/head.png")),
                       Text('Home/Office\nCleaning'),
                     ],
                   ),
                   Column(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset("asset/blue.png")),
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset("asset/blue.png")),
                       Text('Dry\nCleaning'),
                     ],
                   ),
                   Column(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset("asset/pics.png")),
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset("asset/pics.png")),
                       Text('Electrical\nService'),
                     ],
                   ),
@@ -144,7 +144,6 @@ class _HompageDeatailState extends State<HompageDeatail> {
               ),
             ),
           ),
-
           SizedBox(
             height: 10,
           ),
@@ -157,24 +156,24 @@ class _HompageDeatailState extends State<HompageDeatail> {
                   Column(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset("asset/head.png")),
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset("asset/head.png")),
                       Text('Home/Office\nCleaning'),
                     ],
                   ),
                   Column(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset("asset/blue.png")),
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset("asset/blue.png")),
                       Text('Dry\nCleaning'),
                     ],
                   ),
                   Column(
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset("asset/pics.png")),
+                          borderRadius: BorderRadius.circular(15),
+                          child: Image.asset("asset/pics.png")),
                       Text('Electrical\nService'),
                     ],
                   ),
@@ -182,17 +181,16 @@ class _HompageDeatailState extends State<HompageDeatail> {
               ),
             ),
           ),
-
-          SizedBox(height: 20,),
-
+          SizedBox(
+            height: 20,
+          ),
           Container(
-
             padding: EdgeInsets.all(10),
             color: Colors.grey,
-            child: Text("View more",),
+            child: Text(
+              "View more",
+            ),
           )
-          
-          
         ],
       ),
     );
