@@ -5,6 +5,7 @@ import 'package:ondemand/screens/auth/signup.dart';
 import 'package:ondemand/screens/bottom_navigation.dart';
 import 'package:ondemand/screens/card_slide.dart';
 import 'package:ondemand/screens/services.dart';
+import 'package:ondemand/screens/profile/profile.dart';
 
 import 'homepageDetail.dart';
 
@@ -28,7 +29,7 @@ class _homescreenState extends State<homescreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child:Column(
+        child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.all(12),
@@ -39,10 +40,7 @@ class _homescreenState extends State<homescreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       GestureDetector(
-                        onTap: () {
-                          print("side bar tap");
-                          // handle profile image click
-                        },
+                        onTap: () {},
                         child: CircleAvatar(
                           backgroundImage: AssetImage("asset/lol.png"),
                           radius: 24,
@@ -88,7 +86,6 @@ class _homescreenState extends State<homescreen> {
             SizedBox(
               height: 10,
             ),
-
             Expanded(
               child: ListView.builder(
                   itemCount: 1,
@@ -96,9 +93,9 @@ class _homescreenState extends State<homescreen> {
                     return HompageDeatail();
                   })),
             ),
-
-            SizedBox(height: 20,)
-
+            SizedBox(
+              height: 20,
+            )
           ],
         ),
       ),

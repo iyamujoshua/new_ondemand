@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ondemand/screens/homepage/homescreen.dart';
 import 'package:ondemand/screens/homepage/view.dart';
+import 'package:ondemand/screens/profile/profile.dart';
 
 import 'booking.dart';
 
@@ -14,7 +15,7 @@ class ButtomNavigation extends StatefulWidget {
 class _ButtomNavigationState extends State<ButtomNavigation> {
   int selectedIndex = 0;
 
-  final screen = [homescreen(), Booking(), Booking(), Booking(), ];
+  final screen = [homescreen(), Booking(), Booking(), profile() ];
 
   void _onitemtapped(int index) {
     setState(() {
