@@ -19,14 +19,14 @@ class _profileState extends State<profile> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
-              height: 50,
-            ),
-            Text("Settings",
-                style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 20)),
+            // SizedBox(
+            //   height: 50,
+            // ),
+            // Text("Settings",
+            //     style: TextStyle(
+            //         color: Colors.black,
+            //         fontWeight: FontWeight.w500,
+            //         fontSize: 20)),
             SizedBox(
               height: 50,
             ),
@@ -80,7 +80,7 @@ class _profileState extends State<profile> {
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
-                "assets/icons/arrow-left.svg",
+                "asset/svarrow.svg",
               ),
               onTap: () {
                 Navigator.pushNamed(context, '/Notifications');
@@ -92,7 +92,7 @@ class _profileState extends State<profile> {
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
-                "asset/Combined-Shape.svg",
+                "asset/svarrow.svg",
               ),
               onTap: () {
                 Navigator.pushNamed(context, '/Download');
@@ -104,7 +104,7 @@ class _profileState extends State<profile> {
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
-                "asset/",
+                "asset/svarrow.svg",
               ),
               onTap: () {
                 Navigator.pushNamed(context, '/AppSetting');
@@ -117,7 +117,7 @@ class _profileState extends State<profile> {
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
-                "assets/",
+                "asset/svarrow.svg",
               ),
             ),
             ListTile(
@@ -126,7 +126,7 @@ class _profileState extends State<profile> {
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
-                "assets/",
+                "asset/svarrow.svg",
               ),
             ),
             Expanded(child: Container()),

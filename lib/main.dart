@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
           '/ButtomNavigation': (context) => const ButtomNavigation(),
           '/view': (context) => const view(),
           '/profile': (context) => const profile(),
+          '/Viewall': (context) => const Viewall(),
           // ButtomNavigation
           // ForgetPassword
         });

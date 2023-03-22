@@ -184,11 +184,21 @@ class _HompageDeatailState extends State<HompageDeatail> {
           SizedBox(
             height: 20,
           ),
-          Container(
-            padding: EdgeInsets.all(10),
-            color: Colors.grey,
-            child: Text(
-              "View more",
+          GestureDetector(
+            onTap: () {
+             Navigator.pushNamed(context, '/Viewall');
+            },
+            child: Container(
+              
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(7),
+                color: Color.fromARGB(255, 233, 231, 231)
+              ),
+            
+              child: Text(
+                "View more",
+              ),
             ),
           )
         ],
