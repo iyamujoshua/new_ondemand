@@ -110,37 +110,43 @@ class _HompageDeatailState extends State<HompageDeatail> {
           SizedBox(
             height: 10,
           ),
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/head.png")),
-                      Text('Home/Office\nCleaning'),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/blue.png")),
-                      Text('Dry\nCleaning'),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/pics.png")),
-                      Text('Electrical\nService'),
-                    ],
-                  ),
-                ],
+          GestureDetector(
+            onTap:(){
+              // Navigator.pushNamed(context, routeName)
+              //testing clickable card
+            },
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/head.png")),
+                        Text('Home/Office\nCleaning'),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/blue.png")),
+                        Text('Dry\nCleaning'),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/pics.png")),
+                        Text('Electrical\nService'),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
