@@ -42,14 +42,15 @@ class _profileState extends State<profile> {
                       fontWeight: FontWeight.w500,
                       fontSize: 20)),
                       
+                      
             ),
 
              Center(
-              child: Text("ezekiel_james@email.com",
+              child: Text("ezekieljames@email.com",
                   style: TextStyle(
                       color: Colors.black,
                       // fontWeight: FontWeight.w500,
-                      fontSize: 10)),
+                      fontSize: 15)),
                       
             ),
             SizedBox(
@@ -75,8 +76,9 @@ class _profileState extends State<profile> {
               height: 20,
             ),
             ListTile(
+              // leading: IconButton(icon: Image.asset('asset/Vector.png'), onPressed: () {},),
               title: Text(
-                "Notifications",
+                "Edit Profile",
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
@@ -88,7 +90,7 @@ class _profileState extends State<profile> {
             ),
             ListTile(
               title: Text(
-                "Downloads",
+                "Manage Address",
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
@@ -100,7 +102,7 @@ class _profileState extends State<profile> {
             ),
             ListTile(
               title: Text(
-                "App Settings",
+                "Notifications",
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
@@ -113,7 +115,7 @@ class _profileState extends State<profile> {
             ),
             ListTile(
               title: Text(
-                "Account",
+                "Password and security",
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
@@ -122,30 +124,43 @@ class _profileState extends State<profile> {
             ),
             ListTile(
               title: Text(
-                "Help",
+                "Help Center",
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
               trailing: SvgPicture.asset(
                 "asset/svarrow.svg",
               ),
             ),
-            Expanded(child: Container()),
-            InkWell(
+
+             ListTile(
+              title: Text(
+                "Log out",
+                style: TextStyle(fontSize: 16, color: Colors.red),
+              ),
               onTap: () {
                 Navigator.pushNamed(context, '/Login');
               },
-              child: Center(
-                child: Text(
-                  "Log out",
-                  style: TextStyle(
-                      decoration: TextDecoration.underline,
-                      fontSize: 17,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.black),
-                  textAlign: TextAlign.center,
-                ),
-              ),
+              // trailing: SvgPicture.asset(
+              //   "asset/svarrow.svg",
+              // ),
             ),
+            // Expanded(child: Container()),
+            // InkWell(
+            //   onTap: () {
+            //     Navigator.pushNamed(context, '/Login');
+            //   },
+            //   child: Center(
+            //     child: Text(
+            //       "Log out",
+            //       style: TextStyle(
+            //           decoration: TextDecoration.underline,
+            //           fontSize: 17,
+            //           fontWeight: FontWeight.w500,
+            //           color: Colors.black),
+            //       textAlign: TextAlign.center,
+            //     ),
+            //   ),
+            // ),
             SizedBox(
               height: 30,
             ),
