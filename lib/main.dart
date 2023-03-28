@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ondemand/screens/auth/forgetPassword.dart';
+import 'package:ondemand/screens/auth/Otp.dart';
+import 'package:ondemand/screens/auth/changepassword.dart';
+import 'package:ondemand/screens/auth/forgetPassnumber.dart';
 import 'package:ondemand/screens/auth/login.dart';
 import 'package:ondemand/screens/auth/signup.dart';
 import 'package:ondemand/screens/bottom_navigation.dart';
@@ -28,13 +30,12 @@ class MyApp extends StatelessWidget {
           '/signup': (context) => const signup(),
           '/Login': (context) => const Login(),
           '/ForgetPassword': (context) => const ForgetPassword(),
-          
+          '/OtpPage': (context) => const OtpPage(),
+          '/ChangePassword': (context) => const ChangePassword(),
           '/ButtomNavigation': (context) => const ButtomNavigation(),
           '/view': (context) => const view(),
           '/profile': (context) => const profile(),
           '/Viewall': (context) => const Viewall(),
-          // ButtomNavigation
-          // ForgetPassword
         });
   }
 }

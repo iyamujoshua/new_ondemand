@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:ondemand/screens/homepage/homescreen.dart';
 import 'package:ondemand/screens/homepage/view_all.dart';
 
-import '../booking.dart';
+import '../booking/booking.dart';
 import '../bottom_navigation.dart';
 
 class view extends StatefulWidget {

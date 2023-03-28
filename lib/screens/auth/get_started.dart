@@ -18,6 +18,14 @@ class extended extends StatefulWidget {
 }
 
 class _extendedState extends State<extended> {
+  final ButtonStyle style = ElevatedButton.styleFrom(
+    elevation: 0,
+    backgroundColor: Colors.transparent,
+    shape: RoundedRectangleBorder(
+        side: BorderSide(width: 1, color: Color.fromARGB(111, 158, 158, 158)),
+        borderRadius: BorderRadius.circular(50)),
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -128,13 +136,8 @@ class _extendedState extends State<extended> {
           ),
           SizedBox(
             width: 350,
-            child: RaisedButton(
-              elevation: 0,
-              shape: RoundedRectangleBorder(
-                  side: BorderSide(
-                      width: 1, color: Color.fromARGB(111, 158, 158, 158)),
-                  borderRadius: BorderRadius.circular(50)),
-              color: Colors.transparent,
+            child: ElevatedButton(
+              style: style,
               onPressed: () {},
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 15),
@@ -157,13 +160,8 @@ class _extendedState extends State<extended> {
           ),
           SizedBox(
             width: 350,
-            child: RaisedButton(
-              elevation: 0,
-              shape: RoundedRectangleBorder(
-                  side: BorderSide(
-                      width: 1, color: Color.fromARGB(111, 158, 158, 158)),
-                  borderRadius: BorderRadius.circular(50)),
-              color: Colors.transparent,
+            child: ElevatedButton(
+              style: style,
               onPressed: () {},
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 15),

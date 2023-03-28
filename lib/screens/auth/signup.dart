@@ -232,9 +232,6 @@ class _signupState extends State<signup> {
                   title: 'Continue',
                   onPress: () {
                     Navigator.pushNamed(context, '/ButtomNavigation');
-                    //               Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                    //   return homescreen();
-                    //  },),);
                   }),
             ],
           ),

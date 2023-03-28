@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../utilities/Customebutton.dart';
 import '../../utilities/Textformfield.dart';
+import '../../utilities/welcomedialog.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -190,9 +191,13 @@ class _LoginState extends State<Login> {
                       size: 17,
                       title: 'Log in',
                       onPress: () {
-                        Navigator.pushNamed(context, '/ButtomNavigation');
+                        WelcomeDialog(context);
+                        // Navigator.pushNamed(context, '/ButtomNavigation');
                       }),
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
             ],
           ),

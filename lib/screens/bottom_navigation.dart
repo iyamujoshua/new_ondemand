@@ -3,7 +3,7 @@ import 'package:ondemand/screens/homepage/homescreen.dart';
 import 'package:ondemand/screens/homepage/view.dart';
 import 'package:ondemand/screens/profile/profile.dart';
 
-import 'booking.dart';
+import 'booking/booking.dart';
 
 class ButtomNavigation extends StatefulWidget {
   const ButtomNavigation({super.key});
@@ -15,7 +15,7 @@ class ButtomNavigation extends StatefulWidget {
 class _ButtomNavigationState extends State<ButtomNavigation> {
   int selectedIndex = 0;
 
-  final screen = [homescreen(), Booking(), Booking(), profile() ];
+  final screen = [homescreen(), Booking(), Booking(), profile()];
 
   void _onitemtapped(int index) {
     setState(() {
@@ -29,11 +29,11 @@ class _ButtomNavigationState extends State<ButtomNavigation> {
     return Scaffold(
       body: screen[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color.fromRGBO(223, 247, 255, 1),
         currentIndex: selectedIndex,
-        elevation: 10,
+        elevation: 0,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        selectedItemColor: Colors.orange,
         unselectedItemColor: Colors.grey,
         onTap: ((index) {
           setState(() {
@@ -41,12 +41,12 @@ class _ButtomNavigationState extends State<ButtomNavigation> {
           });
           print(selectedIndex);
         }),
-        items: <BottomNavigationBarItem>[
+        items: [
           BottomNavigationBarItem(
             icon: Image.asset(
               'asset/house.png',
               height: 24,
-              color: selectedIndex == 0 ? Colors.purple : Colors.grey,
+              color: selectedIndex == 0 ? Color(0xff5F15CA) : Colors.grey,
             ),
             label: 'Home',
           ),
@@ -54,7 +54,7 @@ class _ButtomNavigationState extends State<ButtomNavigation> {
             icon: Image.asset(
               'asset/line.png',
               height: 24,
-              color: selectedIndex == 1 ? Colors.purple : Colors.grey,
+              color: selectedIndex == 1 ? Color(0xff5F15CA) : Colors.grey,
             ),
             label: 'Booking',
           ),
@@ -62,7 +62,7 @@ class _ButtomNavigationState extends State<ButtomNavigation> {
             icon: Image.asset(
               'asset/chat.png',
               height: 24,
-              color: selectedIndex == 2 ? Colors.purple : Colors.grey,
+              color: selectedIndex == 2 ? Color(0xff5F15CA) : Colors.grey,
             ),
             label: 'Chat',
           ),
@@ -70,7 +70,7 @@ class _ButtomNavigationState extends State<ButtomNavigation> {
             icon: Image.asset(
               'asset/Vector.png',
               height: 24,
-              color: selectedIndex == 3 ? Colors.purple : Colors.grey,
+              color: selectedIndex == 3 ? Color(0xff5F15CA) : Colors.grey,
             ),
             label: 'Profile',
           ),

@@ -111,7 +111,7 @@ class _HompageDeatailState extends State<HompageDeatail> {
             height: 10,
           ),
           GestureDetector(
-            onTap:(){
+            onTap: () {
               // Navigator.pushNamed(context, routeName)
               //testing clickable card
             },
@@ -192,16 +192,13 @@ class _HompageDeatailState extends State<HompageDeatail> {
           ),
           GestureDetector(
             onTap: () {
-             Navigator.pushNamed(context, '/Viewall');
+              Navigator.pushNamed(context, '/Viewall');
             },
             child: Container(
-              
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(7),
-                color: Color.fromARGB(255, 233, 231, 231)
-              ),
-            
+                  borderRadius: BorderRadius.circular(7),
+                  color: Color.fromARGB(255, 233, 231, 231)),
               child: Text(
                 "View more",
               ),

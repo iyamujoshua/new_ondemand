@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ondemand/screens/homepage/homescreen.dart';
 
-
 class profile extends StatefulWidget {
   const profile({Key? key}) : super(key: key);
 
@@ -19,19 +18,20 @@ class _profileState extends State<profile> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // SizedBox(
-            //   height: 50,
-            // ),
-            // Text("Settings",
-            //     style: TextStyle(
-            //         color: Colors.black,
-            //         fontWeight: FontWeight.w500,
-            //         fontSize: 20)),
             SizedBox(
               height: 50,
             ),
             Center(
-                child: Image(image: AssetImage("asset/lol.png"))),
+              child: Text("Profile",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 20)),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Center(child: Image(image: AssetImage("asset/Frame 44.png"))),
             SizedBox(
               height: 10,
             ),
@@ -41,37 +41,19 @@ class _profileState extends State<profile> {
                       color: Colors.black,
                       fontWeight: FontWeight.w500,
                       fontSize: 20)),
-                      
-                      
             ),
 
-             Center(
+            Center(
               child: Text("ezekieljames@email.com",
                   style: TextStyle(
                       color: Colors.black,
                       // fontWeight: FontWeight.w500,
                       fontSize: 15)),
-                      
             ),
             SizedBox(
               height: 10,
             ),
-            // Center(
-            //   child: Container(
-            //     width: 120,
-            //     height: 35,
-            //     child: CustomRaisedButton(
-            //       title: 'Edit Profile',
-            //       size: 16,
-            //       // isLoading: _isLoading,
-            //       buttonColor: Color(0xff2F70ED),
-            //       titleColor: Colors.white,
-            //       onPress: () {
-            //         // Navigator.pushNamed(context, '/Login');
-            //       },
-            //     ),
-            //   ),
-            // ),
+
             SizedBox(
               height: 20,
             ),
@@ -85,7 +67,7 @@ class _profileState extends State<profile> {
                 "asset/svarrow.svg",
               ),
               onTap: () {
-                Navigator.pushNamed(context, '/Notifications');
+                // Navigator.pushNamed(context, '/Notifications');
               },
             ),
             ListTile(
@@ -97,7 +79,7 @@ class _profileState extends State<profile> {
                 "asset/svarrow.svg",
               ),
               onTap: () {
-                Navigator.pushNamed(context, '/Download');
+                // Navigator.pushNamed(context, '/Download');
               },
             ),
             ListTile(
@@ -109,7 +91,7 @@ class _profileState extends State<profile> {
                 "asset/svarrow.svg",
               ),
               onTap: () {
-                Navigator.pushNamed(context, '/AppSetting');
+                // Navigator.pushNamed(context, '/AppSetting');
                 // '/AppSetting'
               },
             ),
@@ -132,7 +114,7 @@ class _profileState extends State<profile> {
               ),
             ),
 
-             ListTile(
+            ListTile(
               title: Text(
                 "Log out",
                 style: TextStyle(fontSize: 16, color: Colors.red),

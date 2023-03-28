@@ -114,8 +114,11 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                     size: 17,
                     title: 'Send verification code',
                     onPress: () {
-                      // Navigator.pushNamed(context, '/DashBoard');
+                      Navigator.pushNamed(context, '/OtpPage');
                     }),
+              ),
+               SizedBox(
+                height: 20,
               ),
             ],
           ),

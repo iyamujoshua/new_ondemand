@@ -41,226 +41,238 @@ class _ViewallState extends State<Viewall> {
           ),
         ),
         body: SingleChildScrollView(
-          child: Container(
-            child: Column(
-              children: [
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/head.png")),
-                            Text('Home/Office\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/blue.png")),
-                            Text('Dry\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/pics.png")),
-                            Text('Electrical\nService'),
-                          ],
-                        ),
-                      ],
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "All Services",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/head.png")),
+                              Text('Home/Office\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/blue.png")),
+                              Text('Dry\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/pics.png")),
+                              Text('Electrical\nService'),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/head.png")),
-                            Text('Home/Office\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/blue.png")),
-                            Text('Dry\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/pics.png")),
-                            Text('Electrical\nService'),
-                          ],
-                        ),
-                      ],
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/head.png")),
+                              Text('Home/Office\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/blue.png")),
+                              Text('Dry\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/pics.png")),
+                              Text('Electrical\nService'),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/head.png")),
-                            Text('Home/Office\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/blue.png")),
-                            Text('Dry\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/pics.png")),
-                            Text('Electrical\nService'),
-                          ],
-                        ),
-                      ],
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/head.png")),
+                              Text('Home/Office\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/blue.png")),
+                              Text('Dry\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/pics.png")),
+                              Text('Electrical\nService'),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/head.png")),
-                            Text('Home/Office\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/blue.png")),
-                            Text('Dry\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/pics.png")),
-                            Text('Electrical\nService'),
-                          ],
-                        ),
-                      ],
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/head.png")),
+                              Text('Home/Office\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/blue.png")),
+                              Text('Dry\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/pics.png")),
+                              Text('Electrical\nService'),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/head.png")),
-                            Text('Home/Office\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/blue.png")),
-                            Text('Dry\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/pics.png")),
-                            Text('Electrical\nService'),
-                          ],
-                        ),
-                      ],
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/head.png")),
+                              Text('Home/Office\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/blue.png")),
+                              Text('Dry\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/pics.png")),
+                              Text('Electrical\nService'),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/head.png")),
-                            Text('Home/Office\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/blue.png")),
-                            Text('Dry\nCleaning'),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.asset("asset/pics.png")),
-                            Text('Electrical\nService'),
-                          ],
-                        ),
-                      ],
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/head.png")),
+                              Text('Home/Office\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/blue.png")),
+                              Text('Dry\nCleaning'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.asset("asset/pics.png")),
+                              Text('Electrical\nService'),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ));
