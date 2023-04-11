@@ -10,7 +10,7 @@ class CustomeRaisedButton extends StatelessWidget {
   CustomeRaisedButton({
     required this.title,
     this.titleColor = Colors.white,
-    this.buttonColor = Colors.blue,
+    this.buttonColor = Colors.black,
     this.width,
     this.onPress,
     this.isLoading = false,
@@ -23,10 +23,11 @@ class CustomeRaisedButton extends StatelessWidget {
     return GestureDetector(
       onTap: isLoading ? null : this.onPress,
       child: Container(
-        margin: EdgeInsets.only(left: 20, right: 20, top: 10),
+        // margin: EdgeInsets.only(left: 20, right: 20, top: 10),
         alignment: Alignment.center,
         height: 54,
         decoration: BoxDecoration(
+          color: buttonColor,
           gradient: LinearGradient(
             colors: [(Color(0xff9D59FF)), (Color(0xff560BC2))],
             begin: Alignment.centerLeft,
@@ -34,7 +35,7 @@ class CustomeRaisedButton extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(10),
         ),
-        
+
         child: isLoading
             ? Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),

@@ -72,12 +72,15 @@ class _extendedState extends State<extended> {
           SizedBox(
             height: 20,
           ),
-          CustomeRaisedButton(
-              size: 17,
-              title: 'Create an account',
-              onPress: () {
-                Navigator.pushNamed(context, '/signup');
-              }),
+          SizedBox(
+            width: 350,
+            child: CustomeRaisedButton(
+                size: 17,
+                title: 'Create an account',
+                onPress: () {
+                  Navigator.pushNamed(context, '/signup');
+                }),
+          ),
           SizedBox(
             height: 20,
           ),

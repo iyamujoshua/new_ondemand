@@ -4,6 +4,8 @@ import 'package:ondemand/screens/auth/changepassword.dart';
 import 'package:ondemand/screens/auth/forgetPassnumber.dart';
 import 'package:ondemand/screens/auth/login.dart';
 import 'package:ondemand/screens/auth/signup.dart';
+import 'package:ondemand/screens/booking/Tabs/upcoming/cancelbooking.dart';
+import 'package:ondemand/screens/booking/Tabs/upcoming/viewdetail.dart';
 import 'package:ondemand/screens/bottom_navigation.dart';
 import 'package:ondemand/screens/homepage/view.dart';
 import 'package:ondemand/screens/homepage/view_all.dart';
@@ -36,6 +38,10 @@ class MyApp extends StatelessWidget {
           '/view': (context) => const view(),
           '/profile': (context) => const profile(),
           '/Viewall': (context) => const Viewall(),
+          '/ViewDetails': (context) => const ViewDetails(),
+          '/CancelBooking': (context) => const CancelBooking(),
+          // CancelBooking
+          // ViewDetails
         });
   }
 }

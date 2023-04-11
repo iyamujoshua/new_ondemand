@@ -76,7 +76,7 @@ class _homescreenState extends State<homescreen> {
                       padding: const EdgeInsets.all(12),
                       child: Icon(
                         Icons.notifications,
-                        color: Colors.purple,
+                        color: Color(0xff5F15CA),
                       ),
                     ),
                   ),

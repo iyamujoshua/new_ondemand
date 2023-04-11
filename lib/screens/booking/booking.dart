@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'Tabs/Upcoming.dart';
+import 'Tabs/Previous.dart';
+import 'Tabs/upcoming/Upcoming.dart';
 
 class Booking extends StatefulWidget {
   const Booking({Key? key}) : super(key: key);
@@ -23,7 +24,6 @@ class _BookingState extends State<Booking> with TickerProviderStateMixin {
           ),
           TabBar(
             unselectedLabelColor: Color.fromARGB(54, 7, 17, 27),
-            
             dividerColor: Color.fromARGB(226, 7, 17, 27),
             indicatorColor: Color(0xff5E17EB),
             labelColor: Color(0xff5E17EB),
@@ -54,7 +54,7 @@ class _BookingState extends State<Booking> with TickerProviderStateMixin {
           Expanded(
             child: TabBarView(controller: tabController, children: [
               Upcoming(),
-              Upcoming(),
+              Previous(),
               Upcoming(),
             ]),
           ),
