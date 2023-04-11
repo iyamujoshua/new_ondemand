@@ -34,7 +34,7 @@ class _OnbordingState extends State<Onbording> {
       body: Column(
         children: [
           SizedBox(
-            height: 50,
+            height: 10,
           ),
           SizedBox(
             height: 600,
