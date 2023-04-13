@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ondemand/screens/chat/chat.dart';
 import 'package:ondemand/screens/homepage/homescreen.dart';
 import 'package:ondemand/screens/homepage/view.dart';
 import 'package:ondemand/screens/profile/profile.dart';
@@ -15,7 +16,7 @@ class ButtomNavigation extends StatefulWidget {
 class _ButtomNavigationState extends State<ButtomNavigation> {
   int selectedIndex = 0;
 
-  final screen = [homescreen(), Booking(), Booking(), profile()];
+  final screen = [homescreen(), Booking(), chatapp(), profile()];
 
   void _onitemtapped(int index) {
     setState(() {

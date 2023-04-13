@@ -17,29 +17,57 @@ class _HompageDeatailState extends State<HompageDeatail> {
         children: [
           Container(
             width: 370,
+
             decoration: BoxDecoration(
               color: Color(0xffF4F4F4),
               borderRadius: BorderRadius.circular(12),
             ),
-            padding: EdgeInsets.all(12),
-            child: GestureDetector(
-              onTap: () {
-                print("Search bar");
-              },
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.search,
-                    color: Colors.grey,
+            // padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                Icon(
+                  Icons.search,
+                  color: Colors.grey,
+                ),
+                SizedBox(width: 10),
+                Expanded(
+                  child: TextField(
+                    decoration: InputDecoration.collapsed(
+                      hintText: "Search for a service",
+                      hintStyle: TextStyle(color: Colors.grey),
+                    ),
                   ),
-                  Text(
-                    "Search for a service",
-                    style: TextStyle(color: Colors.grey),
-                  )
-                ],
-              ),
+                ),
+              ],
             ),
           ),
+
+          // Container(
+          //   width: 370,
+          //   decoration: BoxDecoration(
+          //     color: Color(0xffF4F4F4),
+          //     borderRadius: BorderRadius.circular(12),
+          //   ),
+          //   padding: EdgeInsets.all(12),
+          //   child: GestureDetector(
+          //     onTap: () {
+          //       print("Search bar");
+          //     },
+          //     child: Row(
+          //       children: [
+          //         Icon(
+          //           Icons.search,
+          //           color: Colors.grey,
+          //         ),
+          //         Text(
+          //           "Search for a service",
+          //           style: TextStyle(color: Colors.grey),
+          //         )
+          //       ],
+          //     ),
+          //   ),
+          // ),
           SizedBox(
             height: 20,
           ),
@@ -79,49 +107,12 @@ class _HompageDeatailState extends State<HompageDeatail> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/head.png")),
-                      Text('Home/Office\nCleaning'),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/blue.png")),
-                      Text('Dry\nCleaning'),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/pics.png")),
-                      Text('Electrical\nService'),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          GestureDetector(
-            onTap: () {
-              // Navigator.pushNamed(context, routeName)
-              //testing clickable card
-            },
-            child: Container(
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
+                  GestureDetector(
+                    onTap: () {
+                      print("hello");
+                      // Navigator.pushNamed(context, 'homeOfficeCleaning');
+                    },
+                    child: Column(
                       children: [
                         ClipRRect(
                             borderRadius: BorderRadius.circular(15),
@@ -129,7 +120,13 @@ class _HompageDeatailState extends State<HompageDeatail> {
                         Text('Home/Office\nCleaning'),
                       ],
                     ),
-                    Column(
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                       print("why");
+                      // Navigator.pushNamed(context, 'dryCleaning');
+                    },
+                    child: Column(
                       children: [
                         ClipRRect(
                             borderRadius: BorderRadius.circular(15),
@@ -137,7 +134,13 @@ class _HompageDeatailState extends State<HompageDeatail> {
                         Text('Dry\nCleaning'),
                       ],
                     ),
-                    Column(
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                       print("okay na");
+                      // Navigator.pushNamed(context, 'electricalService');
+                    },
+                    child: Column(
                       children: [
                         ClipRRect(
                             borderRadius: BorderRadius.circular(15),
@@ -145,11 +148,12 @@ class _HompageDeatailState extends State<HompageDeatail> {
                         Text('Electrical\nService'),
                       ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
+
           SizedBox(
             height: 10,
           ),
@@ -159,34 +163,109 @@ class _HompageDeatailState extends State<HompageDeatail> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/head.png")),
-                      Text('Home/Office\nCleaning'),
-                    ],
+                  GestureDetector(
+                    onTap: () {
+                      print("hello");
+                      // Navigator.pushNamed(context, 'homeOfficeCleaning');
+                    },
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/head.png")),
+                        Text('Home/Office\nCleaning'),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/blue.png")),
-                      Text('Dry\nCleaning'),
-                    ],
+                  GestureDetector(
+                    onTap: () {
+                       print("why");
+                      // Navigator.pushNamed(context, 'dryCleaning');
+                    },
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/blue.png")),
+                        Text('Dry\nCleaning'),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.asset("asset/pics.png")),
-                      Text('Electrical\nService'),
-                    ],
+                  GestureDetector(
+                    onTap: () {
+                       print("okay na");
+                      // Navigator.pushNamed(context, 'electricalService');
+                    },
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/pics.png")),
+                        Text('Electrical\nService'),
+                      ],
+                    ),
                   ),
                 ],
               ),
             ),
           ),
+
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      print("hello");
+                      // Navigator.pushNamed(context, 'homeOfficeCleaning');
+                    },
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/head.png")),
+                        Text('Home/Office\nCleaning'),
+                      ],
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                       print("why");
+                      // Navigator.pushNamed(context, 'dryCleaning');
+                    },
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/blue.png")),
+                        Text('Dry\nCleaning'),
+                      ],
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                       print("okay na");
+                      // Navigator.pushNamed(context, 'electricalService');
+                    },
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset("asset/pics.png")),
+                        Text('Electrical\nService'),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
           SizedBox(
             height: 20,
           ),

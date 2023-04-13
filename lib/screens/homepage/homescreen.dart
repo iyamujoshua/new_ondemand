@@ -67,16 +67,22 @@ class _homescreenState extends State<homescreen> {
                       ),
                     ],
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Color(0xffF4F4F4),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(12),
-                      child: Icon(
-                        Icons.notifications,
-                        color: Color(0xff5F15CA),
+                  GestureDetector(
+                    onTap: () {
+                      // Navigator.pushNamed(context, 'notificationScreen');
+                      print("noti");
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Color(0xffF4F4F4),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: Icon(
+                          Icons.notifications,
+                          color: Color(0xff5F15CA),
+                        ),
                       ),
                     ),
                   ),

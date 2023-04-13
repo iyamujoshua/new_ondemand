@@ -103,7 +103,7 @@ class _PreviousState extends State<Previous> {
                           ),
                           Expanded(child: Container()),
                           SizedBox(
-                            width: 150,
+                            width: 100,
                             child: CustomeRaisedButton(
                                 size: 15,
                                 buttonColor: Color.fromARGB(50, 95, 19, 201),
@@ -205,7 +205,7 @@ class _PreviousState extends State<Previous> {
                           ),
                           Expanded(child: Container()),
                           SizedBox(
-                            width: 150,
+                            width: 100,
                             child: CustomeRaisedButton(
                                 size: 15,
                                 buttonColor: Color.fromARGB(50, 95, 19, 201),
