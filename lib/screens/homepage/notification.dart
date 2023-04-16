@@ -159,7 +159,7 @@ class _notiState extends State<noti> {
             Image.asset("asset/payment.png"),
             Padding(
               padding: const EdgeInsets.only(left:10),
-              child: Text("New feature added: dark mode"),
+              child: Text("Payment Confirmed!"),
             ),
           ],
         ),
@@ -173,7 +173,7 @@ class _notiState extends State<noti> {
             Image.asset("asset/message.png"),
             Padding(
               padding: const EdgeInsets.only(left:10),
-              child: Text("New feature added: dark mode"),
+              child: Text("New Message!"),
             ),
           ],
         ),
@@ -187,7 +187,7 @@ class _notiState extends State<noti> {
             Image.asset("asset/bmade.png"),
             Padding(
               padding: const EdgeInsets.only(left:10),
-              child: Text("New feature added: dark mode"),
+              child: Text("Booking Made!"),
             ),
           ],
         ),
@@ -200,7 +200,7 @@ class _notiState extends State<noti> {
             Image.asset("asset/pcreated.png"),
             Padding(
               padding: const EdgeInsets.only(left:10),
-              child: Text("New feature added: dark mode"),
+              child: Text("Profile Created"),
             ),
           ],
         ),
