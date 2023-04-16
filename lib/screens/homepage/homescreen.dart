@@ -69,8 +69,8 @@ class _homescreenState extends State<homescreen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      // Navigator.pushNamed(context, 'notificationScreen');
-                      print("noti");
+                      Navigator.pushNamed(context, '/noti');
+                      // print("noti");
                     },
                     child: Container(
                       decoration: BoxDecoration(
