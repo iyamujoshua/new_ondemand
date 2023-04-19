@@ -109,8 +109,8 @@ class _HompageDeatailState extends State<HompageDeatail> {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      print("hello");
-                      // Navigator.pushNamed(context, 'homeOfficeCleaning');
+                      // print("hello");
+                      Navigator.pushNamed(context, '/hmc');
                     },
                     child: Column(
                       children: [
@@ -124,7 +124,7 @@ class _HompageDeatailState extends State<HompageDeatail> {
                   GestureDetector(
                     onTap: () {
                        print("why");
-                      // Navigator.pushNamed(context, 'dryCleaning');
+                      Navigator.pushNamed(context, '/EditableDateTime');
                     },
                     child: Column(
                       children: [
