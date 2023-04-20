@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ondemand/main.dart';
 import 'package:intl/intl.dart';
 
 class EditableDateTime extends StatefulWidget {
@@ -33,33 +34,52 @@ class _EditableDateTimeState extends State<EditableDateTime> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      // mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Icon(Icons.date_range, size: 18),
-        SizedBox(width: 8),
-        InkWell(
-          onTap: () {
-            _selectDate(context);
-          },
-          child: Text(
-            DateFormat('EEE, MMM d, y').format(_selectedDate),
-            style: TextStyle(fontSize: 14),
+    return ListView(
+    scrollDirection: Axis.vertical,
+    // mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Row(
+        children: [
+          Icon(Icons.date_range, size: 18, color: Colors.white,),
+          SizedBox(width: 8),
+          GestureDetector(
+            onTap: () {
+              _selectDate(context);
+            },
+            child: Text(
+              DateFormat('EEE, MMM d, y').format(_selectedDate),
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+                decoration: TextDecoration.underline,
+              ),
+            ),
           ),
-        ),
-        SizedBox(width: 16),
-        Icon(Icons.access_time, size: 18),
-        SizedBox(width: 8),
-        InkWell(
-          onTap: () {
-            _selectTime(context);
-          },
-          child: Text(
-            _selectedTime.format(context),
-            style: TextStyle(fontSize: 14),
+        ],
+      ),
+      SizedBox(height: 16),
+      Row(
+        children: [
+          Icon(Icons.access_time, size: 18),
+          SizedBox(width: 8),
+          GestureDetector(
+            onTap: () {
+              _selectTime(context);
+            },
+            child: Text(
+              _selectedTime.format(context),
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+                decoration: TextDecoration.underline,
+              ),
+            ),
           ),
-        ),
-      ],
-    );
+        ],
+      ),
+    ],
+  );
   }
 }
