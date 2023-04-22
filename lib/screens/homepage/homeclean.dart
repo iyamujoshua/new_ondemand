@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ondemand/main.dart';
+import 'package:ondemand/utilities/Textformfield.dart';
+import '../../utilities/Customebutton.dart';
 
 class hmc extends StatefulWidget {
   const hmc({super.key});
@@ -138,9 +140,7 @@ class _hmcState extends State<hmc> {
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(
-                      
-                    ),
+                      decoration: BoxDecoration(),
                       padding: EdgeInsets.only(left: 160),
                       child: DropdownButton<String>(
                         value: _selectedItem,
@@ -159,7 +159,70 @@ class _hmcState extends State<hmc> {
                             _selectedItem = value!;
                           });
                         },
-                      ))
+                      )),
+                  Text(
+                    "Date",
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 17,
+                      color: Colors.black,
+                    ),
+                  ),
+                  TextFormField1(
+                    hintText: '',
+                    prefixIcon: Image.asset(
+                      "asset/date.png",
+                      width: 5,
+                      height: 5,
+                    ),
+                    label: '',
+                    suffixIcon: null,
+                    obscureText: false,
+                  ),
+
+                  SizedBox(height: 10,),
+                  Text(
+                    "Time",
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 17,
+                      color: Colors.black,
+                    ),
+                  ),
+                  TextFormField1(
+                    hintText: '',
+                    prefixIcon: Image.asset(
+                      "asset/time.png",
+                      width: 5,
+                      height: 5,
+                    ),
+                    label: '',
+                    suffixIcon: null,
+                    obscureText: false,
+                  ),
+                  SizedBox(height: 10,),
+Text("Address"),
+TextFormField(
+  cursorColor: Colors.purple,
+  decoration: InputDecoration(
+    enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.purple),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.purple),
+    ),
+  ),
+),
+              SizedBox(
+                height: 15,
+              ),
+              CustomeRaisedButton(
+                  size: 17,
+                  title: 'Book Now',
+                  onPress: () {
+                    Navigator.pushNamed(context, '/bsummary');
+                  }),
+
                 ],
               ),
             ),

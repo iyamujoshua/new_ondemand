@@ -8,6 +8,7 @@ import 'package:ondemand/screens/booking/Tabs/upcoming/cancelbooking.dart';
 import 'package:ondemand/screens/booking/Tabs/upcoming/viewdetail.dart';
 import 'package:ondemand/screens/bottom_navigation.dart';
 import 'package:ondemand/screens/chat/chat.dart';
+import 'package:ondemand/screens/homepage/bsummary.dart';
 import 'package:ondemand/screens/homepage/dropdown.dart';
 import 'package:ondemand/screens/homepage/notification.dart';
 import 'package:ondemand/screens/homepage/view.dart';
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
           '/noti': (context) => const noti(),
           '/hmc': (context) => const hmc(),
           '/EditableDateTime': (context) => EditableDateTime(),
+          '/bsummary': (context) => bsummary(),
           
           // CancelBooking
           // ViewDetails

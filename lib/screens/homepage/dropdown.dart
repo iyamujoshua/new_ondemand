@@ -35,6 +35,7 @@ class _EditableDateTimeState extends State<EditableDateTime> {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      
     scrollDirection: Axis.vertical,
     // mainAxisAlignment: MainAxisAlignment.center,
     children: [
@@ -61,7 +62,7 @@ class _EditableDateTimeState extends State<EditableDateTime> {
       SizedBox(height: 16),
       Row(
         children: [
-          Icon(Icons.access_time, size: 18),
+          Icon(Icons.access_time, size: 18, color: Colors.white,),
           SizedBox(width: 8),
           GestureDetector(
             onTap: () {
