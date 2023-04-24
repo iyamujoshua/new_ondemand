@@ -124,7 +124,7 @@ class _HompageDeatailState extends State<HompageDeatail> {
                   GestureDetector(
                     onTap: () {
                        print("why");
-                      Navigator.pushNamed(context, '/EditableDateTime');
+                      // Navigator.pushNamed(context, '/EditableDateTime');
                     },
                     child: Column(
                       children: [

@@ -58,7 +58,10 @@ class _profileState extends State<profile> {
               height: 20,
             ),
             ListTile(
-              // leading: IconButton(icon: Image.asset('asset/Vector.png'), onPressed: () {},),
+              leading: IconButton(
+                icon: Image.asset('asset/s1.png'),
+                onPressed: () {},
+              ),
               title: Text(
                 "Edit Profile",
                 style: TextStyle(fontSize: 16, color: Colors.black),
@@ -71,6 +74,10 @@ class _profileState extends State<profile> {
               },
             ),
             ListTile(
+              leading: IconButton(
+                icon: Image.asset('asset/s2.png'),
+                onPressed: () {},
+              ),
               title: Text(
                 "Manage Address",
                 style: TextStyle(fontSize: 16, color: Colors.black),
@@ -83,6 +90,10 @@ class _profileState extends State<profile> {
               },
             ),
             ListTile(
+              leading: IconButton(
+                icon: Image.asset('asset/s3.png'),
+                onPressed: () {},
+              ),
               title: Text(
                 "Notifications",
                 style: TextStyle(fontSize: 16, color: Colors.black),
@@ -96,6 +107,10 @@ class _profileState extends State<profile> {
               },
             ),
             ListTile(
+              leading: IconButton(
+                icon: Image.asset('asset/s4.png'),
+                onPressed: () {},
+              ),
               title: Text(
                 "Password and security",
                 style: TextStyle(fontSize: 16, color: Colors.black),
@@ -105,6 +120,10 @@ class _profileState extends State<profile> {
               ),
             ),
             ListTile(
+              leading: IconButton(
+                icon: Image.asset('asset/s5.png'),
+                onPressed: () {},
+              ),
               title: Text(
                 "Help Center",
                 style: TextStyle(fontSize: 16, color: Colors.black),
@@ -115,6 +134,10 @@ class _profileState extends State<profile> {
             ),
 
             ListTile(
+              leading: IconButton(
+                icon: Image.asset('asset/s6.png'),
+                onPressed: () {},
+              ),
               title: Text(
                 "Log out",
                 style: TextStyle(fontSize: 16, color: Colors.red),
